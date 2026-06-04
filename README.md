@@ -63,6 +63,3 @@ To run this project locally, ensure you have Python and Node.js installed on you
     Ensure you have MongoDB Compass installed and running on localhost:27017.
 
     The backend will automatically create the sports_booking_db and initialize the courts collection on the first launch.
-
-### 📸 Project Preview
-![Admin Dashboard](ss/Screenshot (123).png)
