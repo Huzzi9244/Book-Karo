@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f1f5f9; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 650px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.brand-section {
+  flex: 1;
+  background: #f8fafc;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e2e8f0;
+}
+
+.brand-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.brand-section h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #0f172a;
+}
+
+.brand-section h1 span {
+  color: #2563eb;
+}
+
+.brand-footer {
+  font-weight: 800;
+  color: #0f172a;
+  font-size: 1.2rem;
+}
+
+.form-section {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.form-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.form-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+/* Thick, clean inputs with NO icons */
+.clean-input {
+  width: 100%;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.clean-input::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.clean-input:focus {
+  background: #ffffff;
+  border-color: #0f172a; /* Snaps to sharp black on click */
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+}
+
+.input-row .clean-input {
+  margin-bottom: 16px;
+}
+
+/* Solid Black Button */
+.primary-button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.toggle-link {
+  color: #0f172a;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 8px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+}
+
+.toggle-link:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 800px) {
+  .brand-section { display: none; }
+  .form-section { padding: 40px 30px; }
+}
+
+/* Add this to the very bottom of your index.css */
+
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.password-container .clean-input {
+  margin-bottom: 0; 
+  padding-right: 50px; /* Make room for the eye icon */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.password-toggle:hover {
+  color: #0f172a;
+}
+
+.error-message {
+  color: #ef4444; /* Clean, modern red */
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
