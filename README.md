@@ -65,4 +65,4 @@ To run this project locally, ensure you have Python and Node.js installed on you
     The backend will automatically create the sports_booking_db and initialize the courts collection on the first launch.
 
 ### 📸 Project Preview
-![Admin Dashboard](screenshots/Screenshot(123).png)
+![Admin Dashboard](ss/Screenshot (123).png)
