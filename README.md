@@ -1,6 +1,6 @@
-CourtSync (Booking Hub)
+Book-Karo
 
-CourtSync is a high-performance, full-stack sports facility reservation system. It provides a seamless experience for players to book courts and a comprehensive "Master Control" panel for administrators to manage system revenue, user data, and real-time reservation scheduling.
+Book-Karo is a high-performance, full-stack sports facility reservation system. It provides a seamless experience for players to book courts and a comprehensive "Master Control" panel for administrators to manage system revenue, user data, and real-time reservation scheduling.
 🚀 Key Technologies
 
     Frontend: React (Vite) with a modern, glassmorphism-inspired UI.
